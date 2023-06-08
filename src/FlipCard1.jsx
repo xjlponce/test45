@@ -1,7 +1,7 @@
 // FlipCard.js
 import React from 'react';
 import './FlipCard.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -13,7 +13,7 @@ class FlipCard extends React.Component {
       isLoggedIn: false,
       username: '',
       password: '',
-      loginError: false
+      loginError: false,
     };
   }
 
@@ -62,7 +62,7 @@ class FlipCard extends React.Component {
   }
 
   render() {
-    const { isLoggedIn, username, password, loginError,currentPage} = this.state;
+    const { isLoggedIn, username, password,currentPage} = this.state;
 
     if (isLoggedIn) {
         return (
